@@ -33,14 +33,14 @@ export const product = {
             of: [{ type: 'string' }]
         },
         {
-            name: 'size',
-            title: 'Size',
+            name: 'sizes',
+            title: 'Sizes',
             type: 'array',
             of: [{ type: 'string' }]
         },
         {
-            name: 'color',
-            title: 'Color',
+            name: 'colors',
+            title: 'Colors',
             type: 'array',
             of: [{ type: 'string' }]
         },
