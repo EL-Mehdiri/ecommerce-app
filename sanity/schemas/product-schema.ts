@@ -24,7 +24,7 @@ export const product = {
             name: 'images',
             title: 'Images',
             type: 'array',
-            of: [{ type: 'string' }]
+            of: [{ type: 'image' }]
         },
         {
             name: 'categories',
