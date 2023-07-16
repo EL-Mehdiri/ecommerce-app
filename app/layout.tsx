@@ -10,7 +10,10 @@ import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 
 export const metadata: Metadata = {
-  title: "ridmani"
+  title: "ridmani",
+  icons: {
+    icon: '/favicon.ico'
+  }
 }
 
 interface RootLayoutProps {
@@ -28,9 +31,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
             fontSans.variable
           )}
         >
-          <div className="relative flex min-h-screen flex-col">
-            <div className="flex-1">{children}</div>
-          </div>
+          <Providers>
+            <div className="relative flex min-h-screen flex-col">
+              <SiteHeader />
+              <SiteBlob />
+              <div className="flex-1">{children}</div>
+              <SiteFooter />
+            </div>
+          </Providers>
         </body>
       </html>
     </>
