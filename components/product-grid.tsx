@@ -8,6 +8,7 @@ import { formatCurrencyString } from "use-shopping-cart"
 
 import { SanityProduct } from "@/config/inventory"
 import { shimmer, toBase64 } from "@/lib/image"
+import { dataset } from "@/sanity/env"
 
 interface Props {
   products: SanityProduct[]
@@ -27,12 +28,14 @@ export function ProductGrid({ products }: Props) {
     )
   }
 
+  console.log(products)
   return (
     <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:col-span-3 lg:gap-x-8">
       {products.map((product) => (
         <Link key={product._id} href={`/products/${product.slug}`} className="group text-sm">
           <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg border-2 border-gray-200 bg-gray-100 group-hover:opacity-75 dark:border-gray-800">
-            <Image
+
+            {/* <Image
               placeholder="blur"
               blurDataURL={`data:imag/svg+xml;base64,${toBase64(shimmer(225, 280))}`}
               src={urlForImage(product.images[0]).url()}
@@ -40,7 +43,7 @@ export function ProductGrid({ products }: Props) {
               width={225}
               height={280}
               className="h-full w-full object-cover object-center"
-            />
+            /> */}
           </div>
           <h3 className="mt-4 font-medium">{product.name}</h3>
           <p className="mt-2 font-medium">{formatCurrencyString({ currency: product.currency, value: product.price })}</p>
