@@ -46,7 +46,7 @@ export default async function Page({ searchParams }: Props) {
     "slug":slug.current
     
   }`)
-  // console.log(products)
+  console.log(products)
 
 
   return (
