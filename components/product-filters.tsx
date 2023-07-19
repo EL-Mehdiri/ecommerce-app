@@ -51,6 +51,7 @@ export function ProductFilters() {
   const searchParams = useSearchParams()
   const router = useRouter()
 
+
   const searchValues = Array.from(searchParams.entries())
 
   return (
