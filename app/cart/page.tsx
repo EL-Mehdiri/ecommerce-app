@@ -14,9 +14,9 @@ export default function Page() {
             <h2 id="cart-heading" className="sr-only">
               Items in your shopping cart
             </h2>
-            {/* Cart Items */}
+            <CartItems />
           </section>
-          {/* Cart Summary */}
+          <CartSummary />
         </form>
       </main>
     </div>
