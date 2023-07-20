@@ -14,9 +14,9 @@ export async function POST(request: Request) {
         mode: "payment",
         payment_method_types: ['card'],
         line_items: lineItems,
-        shipping_address_collection: [
-            allowed_countries: ['AED']
-        ],
+        // shipping_address_collection: [
+        //     allowed_countries: ['AED']
+        // ],
         shipping_options: [
             {
                 shipping_rate: "shr_1NVd1ZF4WYwvgOIKmRTDJNh5"
