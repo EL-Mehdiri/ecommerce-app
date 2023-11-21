@@ -35,7 +35,7 @@
     "react-dom": "18.2.0",
     "sanity": "3.10.3",
     "shadcn-ui": "0.1.2",
-    "sharp": "0.31.3",
+    "sharp": "0.32.6",
     "stripe": "12.5.0",
     "styled-components": "5.2",
     "tailwind-merge": "1.12.0",
